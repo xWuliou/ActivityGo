@@ -1,0 +1,19 @@
+<div class="row">
+    <div style="height: 30%;">&nbsp</div>
+  <div>
+    <button type="button" class="btn btn-default  glyphicon glyphicon-plus center-block" style="font-size: 40px; border-style: dashed"></button>
+  </div>
+    <input ng-model="firstName"/>
+    <div ng-bind="lastName"></div>
+  <div class="navbar-fixed-bottom">
+    <pre>
+This is a application about Activity managing.
+  1.You can add an activity first.
+  2.And a link to this activity well generate.
+  3.Share this link to your WeChat discussion group.
+  4.Let your friends join this activity.  
+</pre>
+  </div>
+    <a ui-sref-active="active" ui-sref=".create">active.create link</a>
+    <div ui-view></div>
+</div>
