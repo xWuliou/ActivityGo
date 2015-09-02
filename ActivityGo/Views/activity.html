@@ -3,8 +3,6 @@
   <div>
     <button type="button" class="btn btn-default  glyphicon glyphicon-plus center-block" style="font-size: 40px; border-style: dashed"></button>
   </div>
-    <input ng-model="firstName"/>
-    <div ng-bind="lastName"></div>
   <div class="navbar-fixed-bottom">
     <pre>
 This is a application about Activity managing.
@@ -14,6 +12,13 @@ This is a application about Activity managing.
   4.Let your friends join this activity.  
 </pre>
   </div>
-    <a ui-sref-active="active" ui-sref=".create">active.create link</a>
-    <div ui-view></div>
+  <a ui-sref-active="active" ui-sref=".create">create</a>
+  <a ui-sref-active="active" ui-sref=".detail">detail</a>
+    <a ui-sref=".join">join</a>
+  <div ui-view></div>
+
+<input type="text" ng-model="statename"/>
+<input type="text" ng-model="url"/>
+  <button ng-click="message()">123123</button>
+    <button>123123</button>
 </div>

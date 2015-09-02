@@ -8,7 +8,7 @@ using MongoDB.Bson;
 
 namespace ActivityGo.Controllers
 {
-    [RoutePrefix("User")]
+    [RoutePrefix("api/user")]
     public class UserController : ApiController
     {
         private IUserService userService;
@@ -17,7 +17,7 @@ namespace ActivityGo.Controllers
         {
             userService = new UserService();
         }
-        [Route("Create")]
+        [Route("create")]
         [HttpPost]
         //  [Authorize]
         public HttpResponseMessage CreateUser(HttpRequestMessage request, [FromBody] User user)
@@ -32,7 +32,7 @@ namespace ActivityGo.Controllers
             }
         }
 
-        [Route("Update")]
+        [Route("update")]
         [HttpPut]
         public HttpResponseMessage UpdateUser(HttpRequestMessage request, [FromBody] User user)
         {
@@ -47,7 +47,7 @@ namespace ActivityGo.Controllers
 
         }
 
-        [Route("Get")]
+        [Route("get")]
         [HttpGet]
         public HttpResponseMessage GetUser(HttpRequestMessage request, [FromUri] string name)
         {
@@ -67,7 +67,7 @@ namespace ActivityGo.Controllers
             }
         }
 
-        [Route("Delete")]
+        [Route("delete")]
         [HttpDelete]
         public HttpResponseMessage DeleteUser(HttpRequestMessage request, [FromBody] User user)
         {
@@ -82,7 +82,7 @@ namespace ActivityGo.Controllers
             }
         }
 
-        [Route("Login")]
+        [Route("login")]
         [HttpPost]
         public HttpResponseMessage Login(HttpRequestMessage request, [FromBody] User user)
         {

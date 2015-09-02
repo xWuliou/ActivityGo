@@ -1,43 +1,35 @@
-﻿define(['angularAMD','utility', 'utility', 'angular', 'angular-ui-router', 'angular-resource'], function(angularAMD,utility) {
-    'use strict';
+﻿define(['angularAMD', 'utility', 'angular', 'angular-ui-router', 'angular-resource'], function(angularAMD, utility) {
+  'use strict';
 
-    var app = angular.module('project', ['ui.router', 'ngResource']);
+  var app = angular.module('project', ['ui.router', 'ngResource']);
 
-    app.config([
-        '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  app.config([
+    '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-            $stateProvider
-                .state('activity', angularAMD.route({
-                    url: '/activity',
-                    templateUrl: 'Views/activity.html'
-                  //  controllerUrl: 'Views/activityController'
-                    //resolve: {
-                    //    load: ['$q', '$rootScope', '$state', function ($q, $rootScope, $state) {
-                    //        var state = $state.name;
-                    //        alert(state);
-                    //        var controller = utility.getControllerUrl(state);
-                    //        //var controller = 'Views/activityController';
-                    //        var deferred = $q.defer();
-                    //        require([controller], function() {
-                    //            $rootScope.$apply(function() {
-                    //                deferred.resolve();
-                    //            });
-                    //        });
-                    //        return deferred.promise;
-                    //    }]
-                    //}
+      $stateProvider
+        .state('activity', angularAMD.route({
+          url: '/activity',
+          templateUrl: 'Views/activity.html',
+          controllerUrl: 'Views/activity'
 
 
-                }))
-                .state('activity.create',angularAMD.route({
-                    url: '/create',
-                    templateUrl: 'Views/activity/create.html',
-                  //    controllerUrl:'Views/Activity/CreateController'
-                }));
-            $urlRouterProvider.otherwise('/activity');
+        }))
+        .state('account', angularAMD.route({
+          url: '/account',
+          templateUrl: 'Views/account.html',
+        //  controllerUrl: 'Views/account'
+        }))
+        .state('actitem', angularAMD.route({
+          url: '/actitem',
+          templateUrl: 'Views/actitem.html',
+       //   controller: 'Views/actitem'
+        }));
+      $urlRouterProvider.otherwise('/activity');
 
-        }
-    ]);
+    }
+  ]);
 
-    return angularAMD.bootstrap(app);
+  angularAMD.bootstrap(app);
+
+  return app;
 });

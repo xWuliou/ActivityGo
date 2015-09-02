@@ -129,20 +129,32 @@
     <Content Include="Scripts\lib\ngload.js" />
     <Content Include="Scripts\lib\r.js" />
     <Content Include="Scripts\lib\require.js" />
+    <Content Include="Scripts\services\activityService.js" />
+    <Content Include="Scripts\services\ajaxService.js" />
     <Content Include="Views\account.html" />
+    <Content Include="Views\account.js" />
+    <Content Include="Views\account\follow.js" />
     <Content Include="Views\account\cancelfollow.html" />
+    <Content Include="Views\account\cancelfollow.js" />
     <Content Include="Views\account\follow.html" />
     <Content Include="Views\actitem.html" />
+    <Content Include="Views\actitem.js" />
     <Content Include="Views\actitem\createitem.html" />
+    <Content Include="Views\actitem\createitem.js" />
+    <Content Include="Views\actitem\queryitem.js" />
+    <Content Include="Views\actitem\itemdetail.js" />
     <Content Include="Views\actitem\itemdetail.html" />
     <Content Include="Views\actitem\queryitem.html" />
-    <Content Include="Views\activityController.js" />
+    <Content Include="Views\activity.js" />
     <Content Include="Views\activity\create.html" />
     <Content Include="Views\activity.html" />
-    <Content Include="Views\activity\createController.js" />
+    <Content Include="Views\activity\create.js" />
     <Content Include="Views\activity\detail.html" />
+    <Content Include="Views\activity\detail.js" />
     <Content Include="Views\activity\join.html" />
+    <Content Include="Views\activity\join.js" />
     <Content Include="Views\activity\queryact.html" />
+    <Content Include="Views\activity\queryact.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
