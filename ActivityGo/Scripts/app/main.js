@@ -10,7 +10,6 @@
         'angularAMD': 'scripts/lib/angularAMD',
         'ngload': 'scripts/lib/ngload',
         'angular-resource': 'scripts/lib/angular-resource',
-        'utility': 'scripts/app/utility',
         'ajaxService':'scripts/services/ajaxService'
         
     },

@@ -1,24 +1,5 @@
-<div class="row">
-    <div style="height: 30%;">&nbsp</div>
-  <div>
-    <button type="button" class="btn btn-default  glyphicon glyphicon-plus center-block" style="font-size: 40px; border-style: dashed"></button>
-  </div>
-  <div class="navbar-fixed-bottom">
-    <pre>
-This is a application about Activity managing.
-  1.You can add an activity first.
-  2.And a link to this activity well generate.
-  3.Share this link to your WeChat discussion group.
-  4.Let your friends join this activity.  
-</pre>
-  </div>
-  <a ui-sref-active="active" ui-sref=".create">create</a>
-  <a ui-sref-active="active" ui-sref=".detail">detail</a>
-    <a ui-sref=".join">join</a>
-  <div ui-view></div>
+<div class="row" >
 
-<input type="text" ng-model="statename"/>
-<input type="text" ng-model="url"/>
-  <button ng-click="message()">123123</button>
-    <button>123123</button>
+    <div ui-view></div>
+
 </div>
